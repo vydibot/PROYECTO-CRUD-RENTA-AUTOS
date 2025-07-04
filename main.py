@@ -3,12 +3,9 @@ from admin import Admin
 from pago import Pago
 from reserva import Reserva
 from usuario import Usuario
-
-# Simple terminal menu for CRUD operations
-
 def main_menu():
     while True:
-        print("\n--- RENT A CAR CRUD APP ---")
+        print("\n--- CRUD APP RENTA DE AUTOS---")
         print("1. Autos")
         print("2. Admins")
         print("3. Pagos")
@@ -102,7 +99,6 @@ def update_entry(obj, name):
         'Usuario': 'idUSUARIO'
     }[name]
     id_value = int(input(f"{id_field}: "))
-    # For simplicity, ask for all fields (user can leave blank to skip)
     if name == 'Auto':
         modelo = input("modelo (dejar vacío para no cambiar): ")
         marca = input("marca (dejar vacío para no cambiar): ")
