@@ -79,7 +79,10 @@ def create_entry(obj, name):
         idRESERVA = int(input("idRESERVA: "))
         fechaInicio = input("fechaInicio (YYYY-MM-DD): ")
         fechaFin = input("fechaFin (YYYY-MM-DD): ")
-        obj.create(idRESERVA, fechaInicio, fechaFin)
+        idUSUARIO = int(input("idUSUARIO: "))
+        idAUTO = int(input("idAUTO: "))
+        idPAGO = int(input("idPAGO: "))
+        obj.create(idRESERVA, fechaInicio, fechaFin, idUSUARIO, idAUTO, idPAGO)
     elif name == 'Usuario':
         idUSUARIO = int(input("idUSUARIO: "))
         nombre = input("nombre: ")
